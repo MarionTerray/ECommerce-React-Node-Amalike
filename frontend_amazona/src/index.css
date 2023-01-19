@@ -15,10 +15,19 @@ main {
   flex: 1;
 }
 
+.btnCart {
+  background-color: #348300;
+  color: #fff;
+}
+
 .products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.rating span {
+  color: #ffc000;
 }
 
 .product {
