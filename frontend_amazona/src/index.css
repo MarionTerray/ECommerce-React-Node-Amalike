@@ -15,8 +15,8 @@ main {
   flex: 1;
 }
 
-.btnCart {
-  background-color: #348300;
+button {
+  background-color: #00498d;
   color: #fff;
 }
 
@@ -42,4 +42,8 @@ main {
 
 .product-info {
   padding:  1rem;
+}
+
+.img-large {
+  max-width: 100%;
 }
