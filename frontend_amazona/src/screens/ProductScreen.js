@@ -8,6 +8,7 @@ import Rating from '../components/Rating';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
+import { Helmet } from 'react-helmet-async';
 
 const reducer = (state, action) => {
   switch(action.type) {
@@ -62,7 +63,9 @@ useEffect(() => {
           <Col md={3}>
             <ListGroup variant="flush">
               <ListGroup.Item>
-                <h1>{product.name}</h1>
+              <Helmet>
+                <title>{product.name}</title>
+              </Helmet>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Rating
