@@ -11,6 +11,7 @@ import Badge from 'react-bootstrap/esm/Badge';
 import Nav from 'react-bootstrap/Nav';
 import { useContext } from 'react';
 import { Store } from './Store';
+import CartScreen from './screens/CartScreen';
 
 function App() {
   const {state } = useContext(Store);
@@ -26,7 +27,7 @@ function App() {
           <Navbar.Brand>amazona</Navbar.Brand>
         </LinkContainer>
           <Nav className="me-auto">
-            <Link to="/cart" classname="nav-link">
+            <Link to="/cart" className="nav-link">
               Cart 
               {cart.cartItems.length > 0 && (
                 <Badge pill bg="danger">
@@ -43,6 +44,7 @@ function App() {
       <Container className='mt-3'>
         <Routes>
            <Route path='/products/:slug' element={ <ProductScreen /> } />
+           <Route path='/cart' element={ <CartScreen /> } />
             <Route path='/' element={ <HomeScreen /> } />
         </Routes>
       </Container>
