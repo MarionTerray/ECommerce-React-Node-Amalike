@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { render } from "react-dom";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
@@ -12,6 +13,7 @@ import Nav from 'react-bootstrap/Nav';
 import { useContext } from 'react';
 import { Store } from './Store';
 import CartScreen from './screens/CartScreen';
+import SigninScreen from './screens/SigninScreen';
 
 function App() {
   const {state } = useContext(Store);
@@ -45,6 +47,7 @@ function App() {
         <Routes>
            <Route path='/products/:slug' element={ <ProductScreen /> } />
            <Route path='/cart' element={ <CartScreen /> } />
+           <Route path='/signin' element={ <SigninScreen /> } />
             <Route path='/' element={ <HomeScreen /> } />
         </Routes>
       </Container>

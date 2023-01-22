@@ -17,7 +17,7 @@ main {
 
 .btn-primary,
 .btn-outline-primary {
-  background-color: #00498d;
+  background-color: #024188;
   color: #fff;
 }
 
@@ -51,4 +51,7 @@ main {
 
 .img-thumbnail {
   height: 80px;
+}
+#small-container {
+  max-width: 600px;
 }
